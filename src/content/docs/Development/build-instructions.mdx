@@ -11,22 +11,21 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 - A C++ compiler supporting at least C++17.
   - This will be GCC >= 8, Clang >= 5, and MSVC >= 19.15
+- Java JDK
 - cmake >= 3.15
 - ninja (optional, speeds up builds)
 - extra-cmake-modules (optional, available in a submodule)
-- Java JDK
 - Qt 6.0 or later
   - Alternatively, you can use Qt 5.12 or newer. ***This will be removed in Prism X (10.0)***.
 - cmark (optional, vendored in a submodule)
 - gamemode (used at runtime, only on Linux)
-- ghc-filesystem (optional, vendored in a submodule)
 - libGL headers (only on Linux)
 - quazip (optional, vendored in a submodule)
 - scdoc (optional, used to generate manpages)
 - tomlplusplus (optional, vendored in a submodule)
 - zlib (optional, vendored in a submodule)
 
-<Tabs>
+<Tabs syncKey="buildInstructions">
 <TabItem label="Windows (MSVC)">
 
 :::note
@@ -38,20 +37,20 @@ You should first install [winget](https://learn.microsoft.com/en-us/windows/pack
 Once `winget` is available, install the MSVC toolchain with:
 
 ```console
-$ winget install --exact --id Microsoft.VisualStudio.2022.BuildTools --source winget
+$ winget install --source winget --exact --id Microsoft.VisualStudio.2022.BuildTools --override '--add Microsoft.VisualStudio.Workload.VCTools;includeRecommended'
 ```
 
 We will also be using Git:
 
 ```console
-$ winget install --exact --id Git.Git --source winget
+$ winget install --source winget --exact --id Git.Git
 ```
 
 Qt can then be installed with [`aqt`](https://aqtinstall.readthedocs.io/en/latest/):
 
 ```console
-$ winget install --exact --id miurahr.aqtinstall --source winget
-$ aqt install-qt windows desktop 6.7.3 win64_msvc2019 -m qtimageformats qtnetworkauth qt5compat
+$ winget install --source winget --exact --id miurahr.aqtinstall
+$ aqt install-qt windows desktop 6 win64_msvc2022_64 -m qtimageformats qtnetworkauth qt5compat
 ```
 
 </TabItem>
@@ -63,14 +62,20 @@ $ aqt install-qt windows desktop 6.7.3 win64_msvc2019 -m qtimageformats qtnetwor
 $ winget install --exact --id MSYS2.MSYS2 --source winget
 ```
 
-We recommend the CLANG(ARM)64 [environment](https://www.msys2.org/docs/environments/) -- though MINGW64 may also work on x86_64.
-After starting the environment, you may run the following to install all dependencies:
-
-{/* TODO: Use tomlplusplus here when it's not broken in msys2 */}
+We **require** the CLANG(ARM)64 [environment](https://www.msys2.org/docs/environments/). After starting the environment, you may run the following to install all dependencies:
 
 ```console
 $ pacman -Syu pactoys git
-$ pacboy -S toolchain:p cmake:p ninja:p extra-cmake-modules:p qt6-base:p qt6-networkauth:p qt6-svg:p qt6-imageformats:p qt6-5compat:p cmark:p quazip-qt6:p zlib:p
+$ pacboy -S \
+  toolchain:p \
+	cmake:p ninja:p \
+	extra-cmake-modules:p \
+	qt6-base:p \
+	qt6-5compat:p qt6-imageformats:p qt6-networkauth:p qt6-svg:p \
+	cmark:p \
+	quazip-qt6:p \
+	tomlplusplus:p \
+	zlib:p
 ```
 
 </TabItem>
@@ -120,59 +125,36 @@ $ cd PrismLauncher
 
 #### Configuration
 
-<Tabs>
+<Tabs syncKey="buildInstructions">
 <TabItem label="Windows (MSVC)">
 
 Open "x64 Native Tools PowerShell" in Windows Terminal
 
 ```powershell
-cmake -S . -B build -G Ninja `
-  <# -D CMAKE_BUILD_TYPE="Release" #> ` # If you want to build with optimizations
-  -D CMAKE_PREFIX_PATH=".\6.7.0\win64_msvc2019\lib\cmake" `
-  -D CMAKE_INSTALL_PATH="install" `
-  <# -D ENABLE_LTO=ON #> ` # If you want to enable LTO
-  <# -D Launcher_QT_VERSION_MAJOR="5" #> # If you want to use Qt 5
+cmake --preset windows_msvc_debug -D CMAKE_PREFIX_PATH="C:\aqt\6.9.1\win64_msvc2022_64\lib\cmake"
 ```
 
 </TabItem>
 <TabItem label="Windows (MSYS2)">
 
 ```bash
-cmake -S . -B build \
-  -G Ninja \ 
-# -D CMAKE_BUILD_TYPE="Release" \ # If you want to build with optimizations
-  -D CMAKE_INSTALL_PREFIX="install" \ # For installing to ./install
-# -D ENABLE_LTO=ON \ # If you want to enable LTO
-# -D Launcher_QT_VERSION_MAJOR="5" # If you want to use Qt 5
+cmake --preset windows_mingw_debug
 ```
 
 </TabItem>
 <TabItem label="macOS">
 
 ```bash
-cmake -S . -B build \
-  -G Ninja \
-# -D CMAKE_BUILD_TYPE="Release" \ # If you want to build with optimizations
-  -D CMAKE_PREFIX_PATH="/opt/homebrew/opt/qt" \
-  -D CMAKE_INSTALL_PREFIX="install" \
+cmake --preset macos_debug \
+  -D CMAKE_PREFIX_PATH="/opt/homebrew/opt/qt"
   -D CMAKE_OSX_DEPLOYMENT_TARGET=11 \
-# -D CMAKE_OSX_ARCHITECTURES="x86_64;arm64" \ # to build a universal binary (not recommended for development)
-# -D CMAKE_INSTALL_PREFIX="/usr" \ # For building packages. If only installing locally, use "/usr/local"
-# -D ENABLE_LTO=ON \ # If you want to enable LTO
-# -D Launcher_QT_VERSION_MAJOR="5" # If you want to use Qt 5
 ```
 
 </TabItem>
 <TabItem label="Linux">
 
 ```bash
-cmake -S . -B build \
-  -G Ninja \ # If you installed Ninja
-# -D CMAKE_BUILD_TYPE="Release" \ # If you want to build with optimizations
-  -D CMAKE_INSTALL_PREFIX="install" \ # For installing to ./install
-# -D CMAKE_INSTALL_PREFIX="/usr" \ # For building packages. If only installing locally, use "/usr/local"
-# -D ENABLE_LTO=ON \ # If you want to enable LTO
-# -D Launcher_QT_VERSION_MAJOR="5" # If you want to use Qt 5
+cmake --preset linux_debug
 ```
 
 </TabItem>
@@ -180,11 +162,11 @@ cmake -S . -B build \
 
 #### Compilation
 
-<Tabs>
+<Tabs syncKey="buildInstructions">
 <TabItem label="Windows (MSVC)">
 
 ```bash
-cmake --build build -- /p:UseMultiToolTask=true /p:EnforceProcessCountAcrossBuilds=true
+cmake --build build
 ```
 
 </TabItem>
@@ -213,26 +195,13 @@ cmake --build build
 
 #### Installation
 
-<Tabs>
+<Tabs syncKey="buildInstructions">
 <TabItem label="Windows (MSVC)">
 
 ```powershell
 cmake --install build
 cmake --install build --component portable # If you want to install a portable version
 ```
-
-:::caution[Warning]
-When building on Qt 5, OpenSSL's DLLs aren't installed along with the launcher, meaning that you cannot log in.
-
-The solution is to run the following:
-
-```powershell
-robocopy <Path to Qt install>/Tools/OpenSSL/Win_x64/bin/ install libcrypto-1_1-x64.dll libssl-1_1-x64.dll
-```
-
-Replace `<Path to Qt Install>` with the path to your Qt install. If building for 32bit, replace Win_x64 with Win_x86 and remove -x64 from the DLLs' names.
-
-:::
 
 </TabItem>
 <TabItem label="Windows (MSYS2)">
@@ -266,17 +235,17 @@ DESTDIR="$pkgdir" cmake --install build # If you're installing for a package
 
 Nix is a tool for handling reproducible builds across multiple platforms.
 
-After [installing Nix](https://nix.dev/install-nix), you can run the following command to build a debug package:
+After [installing Nix](https://nix.dev/install-nix) and checking out the repository, you can run the following command to build a debug package:
 
 ```bash
-nix build --print-build-logs github:PrismLauncher/PrismLauncher#prismlauncher-debug
+nix build --print-build-logs '.#prismlauncher-debug'
 ```
 
 You can also enter a development shell with all of the tools required to build manually:
 
 ```bash
-nix develop
-cmake -S . -B build -G Ninja -D CMAKE_INSTALL_PREFIX="install"
+nix-shell
+cmake --preset linux_debug
 cmake --build build
 cmake --install build
 ```

@@ -5,7 +5,7 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'Prism Development Wiki',
+			title: 'Prism Launcher Wiki',
 			logo: {
 				light: './src/assets/logo-text-light.svg',
 				dark: './src/assets/logo-text-dark.svg',
