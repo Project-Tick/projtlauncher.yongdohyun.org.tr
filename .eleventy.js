@@ -1,13 +1,9 @@
 const { DateTime } = require("luxon");
 const fs = require("fs");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItTableOfContents = require("markdown-it-table-of-contents");
 const cleanCSS = require("clean-css");
-const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const Image = require("@11ty/eleventy-img");
 
 async function image(alt, filepath, darkpath, classes, lossless = true, sizes = "100vw") {
@@ -74,7 +70,12 @@ async function image(alt, filepath, darkpath, classes, lossless = true, sizes = 
     </picture>`;
 }
 
-module.exports = function (eleventyConfig) {
+module.exports = async function (eleventyConfig) {
+  const { EleventyRenderPlugin } = await import("@11ty/eleventy");
+  const pluginRss = await import("@11ty/eleventy-plugin-rss");
+  const pluginSyntaxHighlight = await import("@11ty/eleventy-plugin-syntaxhighlight");
+  const pluginNavigation = await import("@11ty/eleventy-navigation");
+
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPassthroughCopy("src/admin");
   eleventyConfig.addPassthroughCopy("src/welcome-channel.yaml");
@@ -91,9 +92,9 @@ module.exports = function (eleventyConfig) {
 
 
   // Add plugins
-  eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(pluginSyntaxHighlight);
-  eleventyConfig.addPlugin(pluginNavigation);
+  eleventyConfig.addPlugin(pluginRss.default);
+  eleventyConfig.addPlugin(pluginSyntaxHighlight.default);
+  eleventyConfig.addPlugin(pluginNavigation.default);
   eleventyConfig.addPlugin(EleventyRenderPlugin);
 
   // Add shortcodes
