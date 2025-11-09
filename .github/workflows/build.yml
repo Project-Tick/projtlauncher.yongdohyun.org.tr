@@ -21,8 +21,11 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 9
+
       - name: Install dependencies & build
         run: |
           pnpm install --frozen-lockfile
           pnpm run build
-
