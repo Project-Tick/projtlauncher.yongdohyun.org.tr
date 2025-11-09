@@ -4,16 +4,16 @@ title: About
 templateClass: tmpl-post
 tags: nav
 hero:
-  title: About Prism Launcher
+  title: About ProjT Launcher
 eleventyNavigation:
   key: About
   order: 3
 ---
 <div class="content">
 
-# What is Prism Launcher?
+# What is ProjT Launcher?
 
-Prism Launcher is a custom launcher for Minecraft that was forked from MultiMC. It allows the creation, and management of multiple installations of the game, or "instances" rather, each having their own separate mods, resource packs, settings, and more. While originally being forked over packaging/redistribution concerns, Prism Launcher brings new and exciting features developed by the community for the community. Furthermore, Prism Launcher is still just as true to its roots as ever in providing a project that vows to never bring hostility to those looking to fork, redistribute, or repackage, so long as the terms of our license are respected.
+ProjT Launcher is a custom launcher for Minecraft that was forked from MultiMC. It allows the creation, and management of multiple installations of the game, or "instances" rather, each having their own separate mods, resource packs, settings, and more. While originally being forked over packaging/redistribution concerns, ProjT Launcher brings new and exciting features developed by the community for the community. Furthermore, ProjT Launcher is still just as true to its roots as ever in providing a project that vows to never bring hostility to those looking to fork, redistribute, or repackage, so long as the terms of our license are respected.
 
 ## I'm in! Now tell me more about these features?
 

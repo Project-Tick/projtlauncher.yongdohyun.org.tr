@@ -2,7 +2,7 @@ local_backend: false # use for testing
 
 backend:
   name: github
-  repo: PrismLauncher/prismlauncher.org
+  repo: Project-Tick/projtlauncher.yongdohyun.org.tr
   open_authoring: true
 publish_mode: editorial_workflow
 media_folder: "src/img/screenshots"
