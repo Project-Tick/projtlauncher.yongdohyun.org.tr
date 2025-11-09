@@ -1,7 +1,7 @@
 {
-  "name": "prismlauncher",
+  "name": "projtlauncher",
   "version": "1.0.0",
-  "description": "Official Prism Launcher website",
+  "description": "Official ProjT Launcher website",
   "scripts": {
     "build": "eleventy",
     "watch": "eleventy --watch",
@@ -14,18 +14,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/PrismLauncher/prismlauncher.org.git"
+    "url": "git://github.com/Project-Tick/projtlauncher.yongdohyun.org.tr.git"
   },
   "author": {
-    "name": "Ezekiel Smith",
-    "email": "ezekielsmith@protonmail.com",
-    "url": "https://github.com/ZekeSmith"
+    "name": "Do-Hyun YONG",
+    "email": "froster12@naver.com",
+    "url": "https://github.com/YongDo-Hyun"
   },
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/PrismLauncher/prismlauncher.org/issues"
+    "url": "https://github.com/Project-Tick/projtlauncher.yongdohyun.org.tr/issues"
   },
-  "homepage": "https://prismlauncher.org/",
+  "homepage": "https://projtlauncher.yongdohyun.org.tr/",
   "devDependencies": {
     "@11ty/eleventy": "3.1.2",
     "@11ty/eleventy-fetch": "5.1.0",

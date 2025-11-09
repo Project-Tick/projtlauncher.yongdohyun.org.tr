@@ -2,7 +2,7 @@
 layout: layouts/main.njk
 title: Home
 hero:
-  title: 'Prism Launcher'
+  title: 'ProjT Launcher'
   description: 'An open source Minecraft launcher with the ability to manage multiple instances, accounts and
   mods. Focused on user freedom and free redistributability.'
   image:
@@ -20,7 +20,7 @@ hero:
         <h1>Modpack Management</h1>
         <div class="subtitle">
           <p>Install and launch modpacks easily, while keeping them clean.
-          You no longer need to manually install and update modpacks—Prism Launcher can do these tasks for you without the hassle.</p>
+          You no longer need to manually install and update modpacks—ProjT Launcher can do these tasks for you without the hassle.</p>
         </div>
       </div>
     </div>
@@ -36,7 +36,7 @@ hero:
         <h1>Download and Update Mods</h1>
         <div class="subtitle">
           <p>Are you sick of constantly finding and re-adding that one mod you need?
-          Prism Launcher interfaces directly with Modrinth and CurseForge and can download and update individual mods in addition to modpacks.</p>
+          ProjT Launcher interfaces directly with Modrinth and CurseForge and can download and update individual mods in addition to modpacks.</p>
         </div>
       </div>
     </div>
@@ -53,7 +53,7 @@ hero:
         <div class="subtitle">
           <p>Have your settings ever reset after launching an older version? Have you ever accidentally broken a world because you opened it in an old version?
           Are you tired of manually switching mods and installing modloaders for different versions?<p>
-          <p>Prism Launcher can help. Each Minecraft instance has its own folder, with completely separate mods, resource packs, and settings for each instance.</p>
+          <p>ProjT Launcher can help. Each Minecraft instance has its own folder, with completely separate mods, resource packs, and settings for each instance.</p>
         </div>
         <br>
       </div>
@@ -68,8 +68,8 @@ hero:
       <div>
         <h1>Lightweight and Customizable</h1>
         <div class="subtitle">
-          You don't need an embedded web browser as a game launcher. Prism Launcher uses the Qt toolkit, which requires very few system resources to run.
-          Prism Launcher also lets you customize the menu and supports <a href="https://prismlauncher.org/wiki/getting-started/change-themes/">custom themes</a>.
+          You don't need an embedded web browser as a game launcher. ProjT Launcher uses the Qt toolkit, which requires very few system resources to run.
+          ProjT Launcher also lets you customize the menu and supports <a href="https://projtlauncher.yongdohyun.org.tr/wiki/getting-started/change-themes/">custom themes</a>.
         </div>
       </div>
     </div>
@@ -86,59 +86,27 @@ hero:
 
 ## Reddit
 
-<a class="button type-link size-small" href="https://www.reddit.com/r/PrismLauncher/" target="_blank">r/PrismLauncher</a>
+<a class="button type-link size-small" href="https://www.reddit.com/r/ProjTLauncher/" target="_blank">r/ProjTLauncher</a>
 
 ## Discord
 
 To talk directly to us and get involved with development:
 
-<a class="button type-link size-small" href="https://discord.gg/ArX2nafFz2" target="_blank">Prism Launcher Discord</a>
+<a class="button type-link size-small" href="https://discord.gg/ArX2nafFz2" target="_blank">ProjT Launcher Discord</a>
 
 ## Matrix
 
 For people who don't want to use Discord, we have a Matrix Space:
 
-<a class="button type-link size-small" href="https://matrix.to/#/#prismlauncher:matrix.org" target="_blank">Prism Launcher Space</a>
-
-# Sponsors
-
-We thank all the wonderful backers over at Open Collective! Support Prism Launcher by [becoming a backer](https://opencollective.com/prismlauncher).
-
-[![OpenCollective Backers](https://opencollective.com/prismlauncher/backers.svg?width=890&limit=1000)](https://opencollective.com/prismlauncher#backers)
-
-We also have many wonderful companies who help us keep the lights on
-
-<div class="row corporate-sponsors">
-
-<a href="https://www.jetbrains.com/opensource/">
-  <img src= "https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.svg" alt="JetBrains">
-</a>
-
-<a href="https://hosted.weblate.org/engage/prismlauncher/">
-  <img src="https://hosted.weblate.org/widgets/prismlauncher/-/open-graph.png" alt="Weblate translation status" />
-</a>
-
-<a href="https://www.macstadium.com">
-  <img src="https://uploads-ssl.webflow.com/5ac3c046c82724970fc60918/5c019d917bba312af7553b49_MacStadium-developerlogo.png" alt="Powered by MacStadium" width="300">
-</a>
-
-<a href="https://www.netlify.com">
-  <img src="https://www.netlify.com/v3/img/components/netlify-color-accent.svg" alt="Deploys by Netlify" />
-</a>
-
-<a href="https://tuta.com">
-  <img src="/img/tuta-logo.webp" alt="Mail provided by Tuta">
-</a>
-
-</div>
+<a class="button type-link size-small" href="https://matrix.to/#/#projtlauncher:matrix.org" target="_blank">ProjT Launcher Space</a>
 
 # Source code
 
 ---
 
-Prism Launcher is focused on user freedom and free redistributability. All code is available on [GitHub](https://github.com/PrismLauncher/PrismLauncher/) under the GPL-3 license.
+ProjT Launcher is focused on user freedom and free redistributability. All code is available on [GitHub](https://github.com/Project-Tick/ProjT-Launcher/) under the GPL-3 license.
 
-[Source for this website](https://github.com/PrismLauncher/prismlauncher.org) is hosted under the AGPL-3 License.
+[Source for this website](https://github.com/Project-Tick/projtlauncher.yongdohyun.org.tr) is hosted under the AGPL-3 License.
 
 The logo and related assets are under the CC BY-SA 4.0 license.
 </div>
