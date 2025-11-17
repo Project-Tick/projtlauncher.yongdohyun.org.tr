@@ -18,7 +18,6 @@ eleventyNavigation:
         <br>
         <a class="button size-large" href="https://github.com/Project-Tick/ProjT-Launcher/releases/download/{{version.current}}/ProjTLauncher-Linux-x86_64.AppImage">Download (AppImage)</a>
         <a class="button size-large" href="https://github.com/Project-Tick/ProjT-Launcher/releases/download/{{version.current}}/ProjTLauncher-Linux-Qt6-Portable-{{version.current}}.tar.gz">Download Portable (tar.gz)</a>
-        <a class="button size-large" href="https://github.com/Project-Tick/ProjT-LauncherLauncher/releases/download/{{version.current}}/ProjTLauncher-Linux-Qt5-Portable-{{version.current}}.tar.gz">Download Portable (Qt 5, tar.gz)</a>
        <br />
      </div>
     </div>
