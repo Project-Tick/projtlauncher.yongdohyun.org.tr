@@ -20,10 +20,6 @@ eleventyNavigation:
         <a class="button size-large" href="https://github.com/Project-Tick/ProjT-Launcher/releases/download/{{version.current}}/ProjTLauncher-Linux-Qt6-Portable-{{version.current}}.tar.gz">Download Portable (tar.gz)</a>
         <a class="button size-large" href="https://github.com/Project-Tick/ProjT-LauncherLauncher/releases/download/{{version.current}}/ProjTLauncher-Linux-Qt5-Portable-{{version.current}}.tar.gz">Download Portable (Qt 5, tar.gz)</a>
        <br />
-       <div class="center notification type-info">
-         <h2>Qt 5 packages will be going away soon 😔</h2>
-         <p>Support will be removed after 9.x. Users are encouraged to update to Qt 6 builds where available</p>
-       </div>
      </div>
     </div>
     <div class="column">
@@ -36,7 +32,7 @@ eleventyNavigation:
 
 # Official Packages
 
-## <img src="https://www.vectorlogo.zone/logos/flathub/flathub-icon.svg" height="20" alt="Flathub Logo" /> Flathub
+<!-- ## <img src="https://www.vectorlogo.zone/logos/flathub/flathub-icon.svg" height="20" alt="Flathub Logo" /> Flathub
 
 [Flathub](https://flathub.org/) is our primary method of distribution on Linux
 
@@ -56,7 +52,7 @@ flatpak install flathub tr.org.yongdohyun.ProjTLauncher
 
 ## <img src="https://www.vectorlogo.zone/logos/nixos/nixos-icon.svg" alt="NixOS Logo" height="20" /> Nix / NixOS
 
-An [official Nix Flake](https://github.com/Project-Tick/ProjT-Launcher/blob/develop/nix/README.md) is available for development and release builds.
+An [official Nix Flake](https://github.com/Project-Tick/ProjT-Launcher/blob/develop/nix/README.md) is available for development and release builds. -->
 
 ## <img src="https://github.com/loganmarchione/homelab-svg-assets/raw/745e5d9249f2c847d58de5f1fd7ba4de2f63918e/assets/appimage.svg" alt="AppImage Logo" height="20" /> AppImage
 
@@ -86,7 +82,7 @@ chmod +x ./ProjTLauncher-Linux-x86_64.AppImage
 
 <div class="infobox top">
 
-# Community Packages
+<!-- # Community Packages
 
 ## <img src="https://www.vectorlogo.zone/logos/alpinelinux/alpinelinux-icon.svg" alt="Alpine Linux Logo" height="20"> Alpine Linux
 
@@ -252,6 +248,6 @@ ProjT Launcher is available in the official Void repository
 
 ```bash
 sudo xbps-install ProjTLauncher
-```
+``` -->
 
 </div>

@@ -36,7 +36,7 @@ Note: These builds are less tested than the MSVC builds.
 
 - [Installer (64bit) (.exe)](https://github.com/Project-Tick/ProjT-Launcher/releases/download/{{version.current}}/ProjTLauncher-Windows-MinGW-w64-Setup-{{version.current}}.exe)
 
-## Winget Package
+<!-- ## Winget Package
 
 ```powershell
 winget install --exact yongdohyun.ProjTLauncher
@@ -70,6 +70,6 @@ choco install projtlauncher
 
 ## [PortableApps.com](https://portableapps.com) Installer
 
-A portable installer for ProjT Launcher can be found here: <https://RuiNtD.github.io/ProjTLauncherPortable/>
+A portable installer for ProjT Launcher can be found here: <https://RuiNtD.github.io/ProjTLauncherPortable/> -->
 
 </div>
