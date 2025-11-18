@@ -5,9 +5,6 @@ hero:
   title: 'ProjT Launcher'
   description: 'An open source Minecraft launcher with the ability to manage multiple instances, accounts and
   mods. Focused on user freedom and free redistributability.'
-  image:
-    dark: ./src/img/screenshots/LauncherDark.png
-    light: ./src/img/screenshots/LauncherLight.png
   button:
     url: /download?from=button
     content: 'Download Now'
@@ -20,13 +17,9 @@ hero:
         <h1>Modpack Management</h1>
         <div class="subtitle">
           <p>Install and launch modpacks easily, while keeping them clean.
-          You no longer need to manually install and update modpacks—ProjT Launcher can do these tasks for you without the hassle.</p>
+          You no longer need to manually install and update modpacks. ProjT Launcher can do these tasks for you without the hassle.</p>
         </div>
       </div>
-    </div>
-    <div class="column">
-      {% image "Modpack Installer", "./src/img/screenshots/ModpackInstallLight.png", "./src/img/screenshots/ModpackInstallDark.png" %}
-      {% image "Mod Installer", "./src/img/screenshots/ModpackUpdateLight.png", "./src/img/screenshots/ModpackUpdateDark.png" %}
     </div>
   </div>
 
@@ -39,10 +32,6 @@ hero:
           ProjT Launcher interfaces directly with Modrinth and CurseForge and can download and update individual mods in addition to modpacks.</p>
         </div>
       </div>
-    </div>
-    <div class="column">
-      {% image "Mod Installer", "./src/img/screenshots/ModInstallLight.png", "./src/img/screenshots/ModInstallDark.png" %}
-      {% image "Mod Installer", "./src/img/screenshots/ModUpdateLight.png", "./src/img/screenshots/ModUpdateDark.png" %}
     </div>
   </div>
 
@@ -58,9 +47,6 @@ hero:
         <br>
       </div>
     </div>
-    <div class="column">
-      {% image "Instance Settings", "./src/img/screenshots/PropertiesLight.png", "./src/img/screenshots/PropertiesDark.png" %}
-    </div>
   </div>
 
   <div class="row">
@@ -72,9 +58,6 @@ hero:
           ProjT Launcher also lets you customize the menu and supports <a href="https://projtlauncher.yongdohyun.org.tr/wiki/getting-started/change-themes/">custom themes</a>.
         </div>
       </div>
-    </div>
-    <div class="column">
-      {% image "Mod Installer", "./src/img/screenshots/CustomizeLight.png", "./src/img/screenshots/CustomizeDark.png" %}
     </div>
   </div>
 </div>
