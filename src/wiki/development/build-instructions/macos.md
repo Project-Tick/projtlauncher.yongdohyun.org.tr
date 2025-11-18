@@ -15,8 +15,8 @@ eleventyNavigation:
 Clone the source code using git, and grab all the submodules:
 
 ```zsh
-git clone --recursive https://github.com/PrismLauncher/PrismLauncher.git
-cd PrismLauncher
+git clone --recursive https://github.com/Project-Tick/ProjT-Launcher.git
+cd ProjT-Launcher
 ```
 
 **The rest of the documentation assumes you have already cloned the repository.**
@@ -50,7 +50,7 @@ xcode-select --install
 
 Choose an installation path.
 
-This is where the final `PrismLauncher.app` will be constructed when you run `make install`. Supply it as the `CMAKE_INSTALL_PREFIX` argument during CMake configuration. By default, it's in the dist folder, under PrismLauncher.
+This is where the final `ProjT-Launcher.app` will be constructed when you run `make install`. Supply it as the `CMAKE_INSTALL_PREFIX` argument during CMake configuration. By default, it's in the dist folder, under ProjT-Launcher.
 
 [If you are on zsh](https://support.apple.com/kb/HT208050),zsh does not ignore comments by default, run the following to ignore comments for this session:
 
@@ -102,7 +102,7 @@ You can [download it here](https://ccache.dev/download.html). After setting up, 
 
 To set up VS Code, you can download [the C/C++ extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools), since it provides IntelliSense auto complete, linting, formatting, and various other features.
 
-Then, you need to set up the configuration. Go into the command palette and open up C/C++: Edit Configurations (UI). There, add a new configuration for PrismLauncher.
+Then, you need to set up the configuration. Go into the command palette and open up C/C++: Edit Configurations (UI). There, add a new configuration for ProjTLauncher.
 
 1. Add the path to your Qt `include` folder to `includePath`
 2. Add `-L/{path to your Qt installation}/lib` to `compilerArgs`
@@ -119,7 +119,7 @@ Here is an example of what `.vscode/c_cpp_properties.json` looks like on macOS w
 {
     "configurations": [
         {
-            "name": "Mac (PrismLauncher)",
+            "name": "Mac (ProjTLauncher)",
             "includePath": [
                 "${workspaceFolder}/**",
                 "/opt/homebrew/opt/qt@6/include/**"
@@ -163,4 +163,4 @@ Here is an example of what `.vscode/c_cpp_properties.json` looks like on macOS w
    - Target: `All targets`
    - Choose the newly added configuration as default
 
-Now you should be able to build and test Prism Launcher with the `Build` and `Run` buttons.
+Now you should be able to build and test ProjT Launcher with the `Build` and `Run` buttons.

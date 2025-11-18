@@ -5,11 +5,11 @@ eleventyNavigation:
 ---
 # Development
 
-If you would like to contribute to Prism Launcher, you might find it useful to join our Discord Server or Matrix Space.
+If you would like to contribute to ProjT Launcher, you might find it useful to join our Discord Server or Matrix Space.
 
 ## Building
 
-If you want to build Prism Launcher yourself and/or contribute, check out our [Build Instructions](./build-instructions) page for a handy guide.
+If you want to build ProjT Launcher yourself and/or contribute, check out our [Build Instructions](./build-instructions) page for a handy guide.
 
 ## Code formatting
 

@@ -11,12 +11,12 @@ eleventyNavigation:
 
 The CatPacks folder location is as follows:
 
-- on **Windows:** `%appdata%\PrismLauncher\catpacks`
-- on **Mac:** `~/Library/Application Support/PrismLauncher/catpacks`
-- on **Linux:** `~/.local/share/PrismLauncher/catpacks`
-- on **Flatpak:** `~/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher/catpacks`
+- on **Windows:** `%appdata%\ProjTLauncher\catpacks`
+- on **Mac:** `~/Library/Application Support/ProjTLauncher/catpacks`
+- on **Linux:** `~/.local/share/ProjTLauncher/catpacks`
+- on **Flatpak:** `~/.var/app/tr.org.yongdohyun.ProjTLauncher/data/ProjTLauncher/catpacks`
 
-After you move the CatPack to the mentioned folder restart Prism Launcher, then open the global settings.
+After you move the CatPack to the mentioned folder restart ProjT Launcher, then open the global settings.
 In the Launcher section, click the User Interface tab, and under Cat, choose the newly added CatPack.
 Click the Close button, and enjoy your CatPack.
 

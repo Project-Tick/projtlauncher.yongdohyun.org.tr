@@ -18,9 +18,6 @@ eleventyNavigation:
         <a class="button size-large" href="https://github.com/Project-Tick/ProjT-Launcher/releases/download/{{version.current}}/ProjTLauncher-Windows-MSVC-arm64-Portable-{{version.current}}.zip">Portable (ARM64) (.zip)</a>
       </div>
     </div>
-    <div class="column">
-      {% image "Modpack Installer", "./src/img/screenshots/windows/LauncherLight.png", "./src/img/screenshots/windows/LauncherDark.png" %}
-    </div>
   </div>
 </div>
 

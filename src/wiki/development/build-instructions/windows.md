@@ -15,8 +15,8 @@ eleventyNavigation:
 Clone the source code using git, and grab all the submodules:
 
 ```bash
-git clone --recursive https://github.com/PrismLauncher/PrismLauncher.git
-cd PrismLauncher
+git clone --recursive https://github.com/Project-Tick/ProjT-Launcher.git
+cd ProjT-Launcher
 ```
 
 **The rest of the documentation assumes you have already cloned the repository.**
@@ -41,7 +41,7 @@ You will need to run commands from `x64 Native Tools Command Prompt` or `x86 Nat
 These instructions assume you are using the `x64 Native Tools Command Prompt` to build for 64bit.
 All commands are for a debug build, for release builds, replace `Debug` with `Release` in the cmake build and install commands.
 
-1. `cd` into the folder you cloned Prism Launcher to. Put quotation marks around the path.
+1. `cd` into the folder you cloned ProjT Launcher to. Put quotation marks around the path.
 2. Now we can prepare the build itself: Run `cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON -DCMAKE_PREFIX_PATH=C:\Qt\6.6.2\msvc2019_64\lib\cmake`. These options will copy the final build to the `install` folder after the build.
 
    - If you have installed Qt in a non-default location, then change the `CMAKE_PREFIX_PATH` to `-DCMAKE_PREFIX_PATH=<Path to Qt Install>\6.6.2\msvc2019_64\lib\cmake`, replacing `<Path to Qt Install>` with the path to your Qt install.
@@ -53,9 +53,9 @@ All commands are for a debug build, for release builds, replace `Debug` with `Re
    - If preferred, `UseMultiToolTask` & `EnforceProcessCountAcrossBuilds` can be set as environment variables instead of passing as arguments.
 
 4. Now, wait for it to compile. This could take some time, so hopefully it compiles properly.
-5. Run the command `cmake --install build --config Debug`, and it should install Prism Launcher to whatever the `-DCMAKE_INSTALL_PREFIX` was.
-6. If you don't want Prism Launcher to store its data in `%APPDATA%`, run `cmake --install build --config Debug --component portable` after the install process.
-7. When building on Qt 5, whenever compiling, the OpenSSL DLLs aren't put into the directory to where Prism Launcher installs which are necessary in that case, meaning that you cannot log in. The best way to fix this, is just to do `robocopy D:/Qt/Tools/OpenSSL/Win_x64/bin/ install libcrypto-1_1-x64.dll libssl-1_1-x64.dll`. This should copy the required OpenSSL DLLs to log in. When building on Qt 6 this is not necessary because it can use schannel, the Windows tls library.
+5. Run the command `cmake --install build --config Debug`, and it should install ProjT Launcher to whatever the `-DCMAKE_INSTALL_PREFIX` was.
+6. If you don't want ProjT Launcher to store its data in `%APPDATA%`, run `cmake --install build --config Debug --component portable` after the install process.
+7. When building on Qt 5, whenever compiling, the OpenSSL DLLs aren't put into the directory to where ProjT Launcher installs which are necessary in that case, meaning that you cannot log in. The best way to fix this, is just to do `robocopy D:/Qt/Tools/OpenSSL/Win_x64/bin/ install libcrypto-1_1-x64.dll libssl-1_1-x64.dll`. This should copy the required OpenSSL DLLs to log in. When building on Qt 6 this is not necessary because it can use schannel, the Windows tls library.
 
    - Replace `<Path to Qt Install>` with the path to your Qt install.
    - If building for 32bit, replace `Win_x64` with `Win_x86` and remove `-x64` from the dlls names.
@@ -94,7 +94,7 @@ ccache 4.7.x or newer is required for MSVC support.
 
 ### Compile from command line on Windows
 
-1. `cd` into the folder you cloned Prism Launcher to. Put quotation marks around the path.
+1. `cd` into the folder you cloned ProjT Launcher to. Put quotation marks around the path.
 2. Now we can prepare the build itself: Run `cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install -DENABLE_LTO=ON -DCMAKE_OBJDUMP=/mingw64/bin/objdump.exe -DCMAKE_BUILD_TYPE=Debug -G Ninja`. These options will copy the final build to the `install` folder after the build.
 
    - Replace Debug with Release if you want to build a Release build.
@@ -103,9 +103,9 @@ ccache 4.7.x or newer is required for MSVC support.
 
 3. Now you need to run the build itself: Run `cmake --build build`.
 4. Now, wait for it to compile. This could take some time, so hopefully it compiles properly.
-5. Run the command `cmake --install build`, and it should install Prism Launcher to whatever the `-DCMAKE_INSTALL_PREFIX` was.
-6. If you don't want Prism Launcher to store its data in `%APPDATA%`, run `cmake --install build --component portable` after the install process
-7. When building on Qt 5, whenever compiling, the OpenSSL DLLs aren't put into the directory to where Prism Launcher installs which are necessary in that case, meaning that you cannot log in. The best way to fix this, is just to do `cp /(msystem)/bin/libcrypto-1_1.dll /(msystem)/bin/libssl-1_1.dll install`. This should copy the required OpenSSL DLLs to log in. When building on Qt 6 this is not necessary because it can use schannel, the Windows tls library.
+5. Run the command `cmake --install build`, and it should install ProjT Launcher to whatever the `-DCMAKE_INSTALL_PREFIX` was.
+6. If you don't want ProjT Launcher to store its data in `%APPDATA%`, run `cmake --install build --component portable` after the install process
+7. When building on Qt 5, whenever compiling, the OpenSSL DLLs aren't put into the directory to where ProjT Launcher installs which are necessary in that case, meaning that you cannot log in. The best way to fix this, is just to do `cp /(msystem)/bin/libcrypto-1_1.dll /(msystem)/bin/libssl-1_1.dll install`. This should copy the required OpenSSL DLLs to log in. When building on Qt 6 this is not necessary because it can use schannel, the Windows tls library.
 
    - Replace `(msystem)` with the msystem you're using (e.g. clang64). On 64-bit msystems, like *MSYS2 CLANG64*, you have to add `-x64` to the dlls.
 
@@ -127,7 +127,7 @@ You can [download it here](https://ccache.dev/download.html). After setting up, 
 
 To set up VS Code, you can download [the C/C++ extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools), since it provides IntelliSense auto complete, linting, formatting, and various other features.
 
-Then, you need to set up the configuration. Go into the command palette and open up C/C++: Edit Configurations (UI). There, add a new configuration for PrismLauncher.
+Then, you need to set up the configuration. Go into the command palette and open up C/C++: Edit Configurations (UI). There, add a new configuration for ProjT-Launcher.
 
 1. Add the path to your Qt `include` folder to `includePath`
 2. Add `-L/{path to your Qt installation}/lib` to `compilerArgs`
@@ -144,7 +144,7 @@ Here is an example of what `.vscode/c_cpp_properties.json` looks like on macOS w
 {
     "configurations": [
         {
-            "name": "Mac (PrismLauncher)",
+            "name": "Mac (ProjTLauncher)",
             "includePath": [
                 "${workspaceFolder}/**",
                 "/opt/homebrew/opt/qt@6/include/**"
@@ -188,7 +188,7 @@ Here is an example of what `.vscode/c_cpp_properties.json` looks like on macOS w
    - Target: `All targets`
    - Choose the newly added configuration as default
 
-Now you should be able to build and test Prism Launcher with the `Build` and `Run` buttons.
+Now you should be able to build and test ProjT Launcher with the `Build` and `Run` buttons.
 
 ### Qt Creator
 

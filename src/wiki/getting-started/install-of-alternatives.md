@@ -59,7 +59,7 @@ If you would like to go a bit further, LambdAurora maintains a [very detailed li
 
 If you don't want to search and install these mods manually, then try the [Fabulously Optimized](https://modrinth.com/modpack/fabulously-optimized) modpack, which supports almost all OptiFine features.
 
-[See the installation instructions](https://fabulously-optimized.gitbook.io/modpack/readme/install-instructions#prism-launcher) for Prism Launcher.
+[See the installation instructions](https://fabulously-optimized.gitbook.io/modpack/readme/install-instructions#prism-launcher) for ProjT Launcher.
 
 ### <img src="https://cdn.modrinth.com/data/BYfVnHa7/icon.png" alt="Simply Optimized Logo" height="20"> Simply Optimized
 

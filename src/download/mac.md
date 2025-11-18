@@ -15,9 +15,6 @@ eleventyNavigation:
         <a class="button size-large" href="https://github.com/Project-Tick/ProjT-Launcher/releases/download/{{ version.current }}/ProjTLauncher-macOS-{{ version.current }}.zip">Download (Universal)</a>
       </div>
     </div>
-    <div class="column">
-      {% image "Modpack Installer", "./src/img/screenshots/mac/LauncherLight.png", "./src/img/screenshots/mac/LauncherDark.png" %}
-    </div>
   </div>
 </div>
 

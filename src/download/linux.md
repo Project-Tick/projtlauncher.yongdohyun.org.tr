@@ -21,9 +21,6 @@ eleventyNavigation:
        <br />
      </div>
     </div>
-    <div class="column">
-      {% image "Modpack Installer", "./src/img/screenshots/LauncherLight.png", "./src/img/screenshots/LauncherDark.png" %}
-    </div>
   </div>
 </div>
 

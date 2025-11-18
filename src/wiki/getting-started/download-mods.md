@@ -21,7 +21,3 @@ After you've chosen your mod provider, you can search or browse for any desired 
 If you have elected to use the **Fabric** mod loader, then please ensure that the latest version of the **Fabric API** mod available for your game version is installed. It is mostly **required** for Fabric mods.
 
 If it is missing, you can install it from **Edit** > **Mods** > **Download mods** like any other mod.
-
-## <img src="https://raw.githubusercontent.com/QuiltMC/art/master/brand/svg/quilt_logo_dark.svg" alt="QuiltMC Logo" height="20"> Quilt
-
-For installing Quilt in Prism Launcher, follow the [quilt wiki](https://quiltmc.org/install/prismlauncher/).

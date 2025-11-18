@@ -5,10 +5,10 @@ eleventyNavigation:
   order: 10
 ---
 
-# Using Prism Launcher via the Command Line
+# Using ProjT Launcher via the Command Line
 
 ```text
-Usage: prismlauncher [-h] [-v] [-d &lt;dir&gt;] [-l &lt;launch&gt;] [-s &lt;server&gt;] [-a &lt;profile&gt;] [-I &lt;import&gt;] [--show &lt;show&gt;] [--alive] [--help-all]
+Usage: projtlauncher [-h] [-v] [-d &lt;dir&gt;] [-l &lt;launch&gt;] [-s &lt;server&gt;] [-a &lt;profile&gt;] [-I &lt;import&gt;] [--show &lt;show&gt;] [--alive] [--help-all]
 
 Options:
   -d, --dir &lt;directory&gt;    Use a custom path as application root (use '.' for current directory)
@@ -31,8 +31,8 @@ To find it, **right-click** on the instance you want to know the ID of, and then
 
 Now, just copy the name of the folder that opened.
 
-## Prism Launcher is still opening after I close Minecraft
+## ProjT Launcher is still opening after I close Minecraft
 
-Currently, the _Close Prism Launcher after game window opens_ option opens Prism Launcher after closing Minecraft, even when launched from the CLI.
+Currently, the _Close ProjT Launcher after game window opens_ option opens ProjT Launcher after closing Minecraft, even when launched from the CLI.
 
-To disable this, open _Settings_, then select _Minecraft_, and finally, un-check _Close Prism Launcher after game window opens_ or check _Quit the launcher after game window closes_.
+To disable this, open _Settings_, then select _Minecraft_, and finally, un-check _Close ProjT Launcher after game window opens_ or check _Quit the launcher after game window closes_.

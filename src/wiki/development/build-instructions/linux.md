@@ -15,8 +15,8 @@ eleventyNavigation:
 Clone the source code using git, and grab all the submodules:
 
 ```bash
-git clone --recursive https://github.com/PrismLauncher/PrismLauncher.git
-cd PrismLauncher
+git clone --recursive https://github.com/Project-Tick/ProjT-Launcher.git
+cd ProjT-Launcher
 ```
 
 **The rest of the documentation assumes you have already cloned the repository.**
@@ -67,13 +67,13 @@ cmake --build build
 cmake --install build # Optionally specify DESTDIR for packages (i.e. DESTDIR=${pkgdir} cmake --install ...)
 ```
 
-### Building a .deb
+<!-- ### Building a .deb
 
 Requirements: [makedeb](https://docs.makedeb.org/) installed on your system.
 
 ```bash
-git clone https://mpr.makedeb.org/prismlauncher.git
-cd prismlauncher
+git clone https://mpr.makedeb.org/projtlauncher.git
+cd projtlauncher
 makedeb -s
 ```
 
@@ -89,21 +89,21 @@ You don't need to clone the repo for this; the spec file handles that.
 cd ~
 # setup your ~/rpmbuild directory, required for rpmbuild to work.
 rpmdev-setuptree
-# get the rpm spec file from the prismlauncher on pagure
-git clone https://pagure.io/prismlauncher.git
-cd prismlauncher
+# get the rpm spec file from the projtlauncher on pagure
+git clone https://pagure.io/projtlauncher.git
+cd projtlauncher
 # install build dependencies
-sudo dnf builddep prismlauncher.spec
-sudo dnf builddep -D "_without_qt6 1" prismlauncher.spec # if you want to use Qt 5 instead of Qt 6
+sudo dnf builddep projtlauncher.spec
+sudo dnf builddep -D "_without_qt6 1" projtlauncher.spec # if you want to use Qt 5 instead of Qt 6
 # download build sources
-spectool -g -R prismlauncher.spec
+spectool -g -R projtlauncher.spec
 # move patches to rpmbuild sources directory
 cp *.patch ~/rpmbuild/SOURCES
 # copy any patches to rpmbuild sources directory
 cp *.patch ~/rpmbuild/SOURCES 
 # now build!
-rpmbuild -bb prismlauncher.spec
-rpmbuild -bb --without qt6 prismlauncher.spec # if you want to use Qt 5 instead of Qt 6
+rpmbuild -bb projtlauncher.spec
+rpmbuild -bb --without qt6 projtlauncher.spec # if you want to use Qt 5 instead of Qt 6
 ```
 
 The path to the .rpm packages will be printed once the build is complete.
@@ -120,7 +120,7 @@ osc checkout home:getchoo
 # -qt5 packages will build with Qt 5 instead of Qt 6, while -nightly packages will build with the latest commit (updated every 24h)
 # for this example, we're just using the stable release package that builds with Qt 6
 # NOTE: only -qt5 will build on Leap
-cd home:getchoo/prismlauncher
+cd home:getchoo/projtlauncher
 
 # to build against the current version of Leap, replace `openSUSE_Tumbleweed` with 15.4
 osc build --sccache openSUSE_Tumbleweed
@@ -130,27 +130,27 @@ The path to the .rpm packages will be printed once the build is complete.
 
 ### Building a Flatpak
 
-You don't need to clone the entire Prism Launcher repo for the latest stable version; the Flatpak file handles that. However, cloning the source repository is necessary to build from the latest commit (contains upstream manifest).
+You don't need to clone the entire ProjT Launcher repo for the latest stable version; the Flatpak file handles that. However, cloning the source repository is necessary to build from the latest commit (contains upstream manifest).
 Both `flatpak` and `flatpak-builder` packages must be installed on your system to proceed, including all build dependencies previously mentioned (at the top of page).
 
 #### Latest Stable Release
 
 ```bash
-git clone --recursive https://github.com/flathub/org.prismlauncher.PrismLauncher
-cd org.prismlauncher.PrismLauncher
+git clone --recursive https://github.com/flathub/tr.org.yongdohyun.ProjTLauncher
+cd tr.org.yongdohyun.ProjTLauncher
 flatpak install org.kde.Sdk/x86_64/6.7 runtime/org.freedesktop.Sdk.Extension.openjdk17/x86_64/23.08 runtime/org.freedesktop.Sdk.Extension.openjdk8/x86_64/23.08 runtime/org.freedesktop.Sdk.Extension.openjdk21/x86_64/23.08 # build requirements
 # remove --user --install if you want to build without installing
-flatpak-builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
+flatpak-builder --user --install flatbuild tr.org.yongdohyun.ProjTLauncher.yml
 ```
 
 #### Latest Commit
 
 ```bash
-git clone --recursive https://github.com/prismlauncher/PrismLauncher # source repo - contains upstream manifest
-cd PrismLauncher/flatpak
+git clone --recursive https://github.com/Project-Tick/ProjT-Launcher # source repo - contains upstream manifest
+cd ProjTLauncher/flatpak
 flatpak install org.kde.Sdk/x86_64/6.7 runtime/org.freedesktop.Sdk.Extension.openjdk17/x86_64/23.08 runtime/org.freedesktop.Sdk.Extension.openjdk8/x86_64/23.08 runtime/org.freedesktop.Sdk.Extension.openjdk21/x86_64/23.08 # build requirements
 # remove --user --install if you want to build without installing
-flatpak-builder --user --install flatbuild org.prismlauncher.PrismLauncher.yml
+flatpak-builder --user --install flatbuild tr.org.yongdohyun.ProjTLauncher.yml -->
 ```
 
 ### Installing Qt using the installer (optional)
@@ -183,7 +183,7 @@ You can [download it here](https://ccache.dev/download.html). After setting up, 
 
 To set up VS Code, you can download [the C/C++ extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools), since it provides IntelliSense auto complete, linting, formatting, and various other features.
 
-Then, you need to set up the configuration. Go into the command palette and open up C/C++: Edit Configurations (UI). There, add a new configuration for PrismLauncher.
+Then, you need to set up the configuration. Go into the command palette and open up C/C++: Edit Configurations (UI). There, add a new configuration for ProjTLauncher.
 
 1. Add the path to your Qt `include` folder to `includePath`
 2. Add `-L/{path to your Qt installation}/lib` to `compilerArgs`
@@ -200,7 +200,7 @@ Here is an example of what `.vscode/c_cpp_properties.json` looks like on macOS w
 {
     "configurations": [
         {
-            "name": "Mac (PrismLauncher)",
+            "name": "Mac (ProjTLauncher)",
             "includePath": [
                 "${workspaceFolder}/**",
                 "/opt/homebrew/opt/qt@6/include/**"
@@ -244,7 +244,7 @@ Here is an example of what `.vscode/c_cpp_properties.json` looks like on macOS w
    - Target: `All targets`
    - Choose the newly added configuration as default
 
-Now you should be able to build and test Prism Launcher with the `Build` and `Run` buttons.
+Now you should be able to build and test ProjT Launcher with the `Build` and `Run` buttons.
 
 ### Qt Creator
 

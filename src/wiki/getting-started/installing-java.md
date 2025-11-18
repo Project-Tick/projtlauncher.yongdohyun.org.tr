@@ -8,7 +8,7 @@ eleventyNavigation:
 
 ## Automatically installing Java (recommended)
 
-In Prism Launcher 9.0+, you can let the launcher handle Java automatically on Windows, macOS and Linux (not available in all packages) by enabling "Autodetect Java version" and "Auto-download Mojang Java" in:
+In ProjT Launcher 0.0.1+, you can let the launcher handle Java automatically on Windows, macOS and Linux (not available in all packages) by enabling "Autodetect Java version" and "Auto-download Mojang Java" in:
 
 > Settings (top toolbar) > Java
 
@@ -33,7 +33,7 @@ Otherwise, continue reading for quick download links and a guide for which one t
 
 ### Selecting Java
 
-Once you have **installed** Java, Prism Launcher will be able to detect it during the first time set-up wizard.
+Once you have **installed** Java, ProjT Launcher will be able to detect it during the first time set-up wizard.
 
 If you installed Java after already completing the first time setup process, you can access and modify your Java configuration globally for all instances through:
 
@@ -146,11 +146,11 @@ sudo apk add openjdk17 openjdk8
 
 #### Flatpak
 
-The Prism Launcher Flatpak already bundles Java.
+The ProjT Launcher Flatpak already bundles Java.
 
 #### NixOS
 
-The Prism Launcher NixOS package already bundles Java.
+The ProjT Launcher NixOS package already bundles Java.
 
 ### Special cases
 
@@ -180,4 +180,4 @@ Here is a fix:
 
 - First, remove, if you had, [your current Oracle Java](https://explainjava.com/uninstall-java-macos/)
 - Then download and install [this Java 8u241 binary](https://files.multimc.org/downloads/jre-8u241-macosx-x64.dmg)
-- Select this java binary on Prism Launcher, and it should fix your issue!
+- Select this java binary on ProjT Launcher, and it should fix your issue!
