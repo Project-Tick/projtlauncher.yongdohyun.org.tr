@@ -14,7 +14,6 @@ This marks a major milestone for the project, as it represents the beginning of 
 > The API approval process is still in progress, and required application signatures (code-signing certificates & macOS notarization) have **not been issued yet**.  
 > Once API approval and signing certificates are finalized, MSA login will become fully available in a future update.
 
-
 ## Changelog
 
 ### Added
@@ -44,7 +43,6 @@ This marks a major milestone for the project, as it represents the beginning of 
 - Reorganized branding assets and icons into a structured ProjT theme.
 - Fully detached repository identity from Prism Launcher upstream.
 
-
 ### Fixed
 
 - Fixed zlib module path resolution in the build system.
@@ -57,12 +55,10 @@ This marks a major milestone for the project, as it represents the beginning of 
 
 ### Removed
 
-
 - Removed all Prism Launcher branding and upstream-specific metadata.
 - Removed deprecated translation files, unused assets, and outdated modules.
 - Removed old CMake configuration fragments incompatible with Qt6.
 - Removed upstream CI definitions and replaced them with custom ProjT workflows.
-
 
 **Full Changelog**: <https://github.com/Project-Tick/ProjT-Launcher/commits/0.0.1>
 
