@@ -151,7 +151,6 @@ cd ProjTLauncher/flatpak
 flatpak install org.kde.Sdk/x86_64/6.7 runtime/org.freedesktop.Sdk.Extension.openjdk17/x86_64/23.08 runtime/org.freedesktop.Sdk.Extension.openjdk8/x86_64/23.08 runtime/org.freedesktop.Sdk.Extension.openjdk21/x86_64/23.08 # build requirements
 # remove --user --install if you want to build without installing
 flatpak-builder --user --install flatbuild tr.org.yongdohyun.ProjTLauncher.yml -->
-```
 
 ### Installing Qt using the installer (optional)
 
