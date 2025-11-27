@@ -81,16 +81,6 @@ hero:
 
 ---
 
-## Reddit
-
-<a class="button type-link size-small" href="https://www.reddit.com/r/ProjTLauncher/" target="_blank">r/ProjTLauncher</a>
-
-## Discord
-
-To talk directly to us and get involved with development:
-
-<a class="button type-link size-small" href="https://discord.gg/ArX2nafFz2" target="_blank">ProjT Launcher Discord</a>
-
 ## Matrix
 
 For people who don't want to use Discord, we have a Matrix Space:
