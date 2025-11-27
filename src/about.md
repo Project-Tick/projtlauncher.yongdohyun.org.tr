@@ -30,15 +30,19 @@ ProjT Launcher is a custom launcher for Minecraft that was forked from MultiMC. 
 ## Screenshots
 
 ### About Dialog
+
 ![About](/img/screenshots/projtlauncher_about_about.png)
 
 ### Credits
+
 ![Credits](/img/screenshots/projtlauncher_about_credits.png)
 
 ### License
+
 ![License](/img/screenshots/projtlauncher_about_license.png)
 
 ### Qt Version
+
 ![Qt Version](/img/screenshots/projtlauncher_about_qt.png)
 
 </div>

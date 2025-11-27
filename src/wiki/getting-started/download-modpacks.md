@@ -27,16 +27,21 @@ The **FTB App Import** option assumes that you have **FTB App** installed on you
 ## Screenshots
 
 ### CurseForge
+
 ![CurseForge Modpacks](/img/screenshots/projtlauncher_install_modpacks_curseforge.png)
 
 ### Modrinth
+
 ![Modrinth Modpacks](/img/screenshots/projtlauncher_install_modpacks_modrinth.png)
 
 ### Technic
+
 ![Technic Modpacks](/img/screenshots/projtlauncher_install_modpacks_technic.png)
 
 ### Import
+
 ![Import Modpack](/img/screenshots/projtlauncher_install_import.png)
 
 ### Custom
+
 ![Custom Install](/img/screenshots/projtlauncher_install_custom.png)
