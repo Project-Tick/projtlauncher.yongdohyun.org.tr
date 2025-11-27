@@ -43,7 +43,7 @@
       </div>
       {%- if hero.image %}
       <div class="column">
-        {% image hero.title, hero.image.light, hero.image.dark %}
+        <img src="{{ hero.image.light }}" alt="{{ hero.title }}" style="max-width: 100%; height: auto;">
       </div>
       {%- endif %}
     </div>

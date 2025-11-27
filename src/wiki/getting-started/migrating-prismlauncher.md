@@ -5,9 +5,9 @@ eleventyNavigation:
   order: 3
 ---
 
-# Migrating instances from Prism Launcher
+# Migrating instances from ProjT Launcher
 
-## <img src="https://avatars2.githubusercontent.com/u/5411890" alt="Prism Launcher Logo" height="20" /> In Prism Launcher
+## <img src="https://avatars.githubusercontent.com/u/116031705" alt="Prism Launcher Logo" height="20" /> In Prism Launcher
 
 In order to transfer an instance, or multiple instances from Prism Launcher to ProjT Launcher, you must begin the process by opening Prism Launcher on your computer.
 
@@ -17,7 +17,7 @@ Left-click on the tab and select the **View Instance Folder** option. This shoul
 
 Now that the Prism Launcher instance directory is open, you may **select**, and then **copy** the instances that you wish to transfer.
 
-## <img src="https://raw.githubusercontent.com/Project-Tick/ProjT-Launcher/develop/program_info/tr.org.yongdohyun.ProjTLauncher.svg" alt="Prism Launcher Logo" height="20" /> In Prism Launcher
+## <img src="https://raw.githubusercontent.com/Project-Tick/ProjT-Launcher/develop/program_info/tr.org.yongdohyun.ProjTLauncher.svg" alt="Prism Launcher Logo" height="20" /> In ProjT Launcher
 
 To complete the transfer process, you must now open ProjT Launcher.
 

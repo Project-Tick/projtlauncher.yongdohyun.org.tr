@@ -23,3 +23,20 @@ After selecting which service you wish to use, you can browse the modpacks which
 The "**Import**" option assumes that you have manually downloaded a modpack to your computer through other means, and will ask for a **.zip** or **.mrpack** archive containing a ProjT Launcher compatible pack.
 
 The **FTB App Import** option assumes that you have **FTB App** installed on your PC, and have the modpack installed in FTB App.
+
+## Screenshots
+
+### CurseForge
+![CurseForge Modpacks](/img/screenshots/projtlauncher_install_modpacks_curseforge.png)
+
+### Modrinth
+![Modrinth Modpacks](/img/screenshots/projtlauncher_install_modpacks_modrinth.png)
+
+### Technic
+![Technic Modpacks](/img/screenshots/projtlauncher_install_modpacks_technic.png)
+
+### Import
+![Import Modpack](/img/screenshots/projtlauncher_install_import.png)
+
+### Custom
+![Custom Install](/img/screenshots/projtlauncher_install_custom.png)

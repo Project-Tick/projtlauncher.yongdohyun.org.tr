@@ -5,6 +5,9 @@ hero:
   title: 'ProjT Launcher'
   description: 'An open source Minecraft launcher with the ability to manage multiple instances, accounts and
   mods. Focused on user freedom and free redistributability.'
+  image:
+    light: '/img/screenshots/projtlauncher_main_window.png'
+    dark: '/img/screenshots/projtlauncher_main_window.png'
   button:
     url: /download?from=button
     content: 'Download Now'
@@ -21,6 +24,9 @@ hero:
         </div>
       </div>
     </div>
+    <div class="column">
+      <img src="/img/screenshots/projtlauncher_install_modpacks_modrinth.png" alt="Modpack Management" style="max-width: 100%; height: auto;">
+    </div>
   </div>
 
   <div class="row">
@@ -33,6 +39,9 @@ hero:
         </div>
       </div>
     </div>
+    <div class="column">
+      <img src="/img/screenshots/projtlauncher_install_mods.png" alt="Download Mods" style="max-width: 100%; height: auto;">
+    </div>
   </div>
 
   <div class="row row-reverse">
@@ -44,8 +53,10 @@ hero:
           Are you tired of manually switching mods and installing modloaders for different versions?<p>
           <p>ProjT Launcher can help. Each Minecraft instance has its own folder, with completely separate mods, resource packs, and settings for each instance.</p>
         </div>
-        <br>
       </div>
+    </div>
+    <div class="column">
+      <img src="/img/screenshots/projtlauncher_console_window_version.png" alt="Instance Management" style="max-width: 100%; height: auto;">
     </div>
   </div>
 
@@ -58,6 +69,9 @@ hero:
           ProjT Launcher also lets you customize the menu and supports <a href="https://projtlauncher.yongdohyun.org.tr/wiki/getting-started/change-themes/">custom themes</a>.
         </div>
       </div>
+    </div>
+    <div class="column">
+      <img src="/img/screenshots/projtlauncher_settings_appearance.png" alt="Appearance Settings" style="max-width: 100%; height: auto;">
     </div>
   </div>
 </div>
