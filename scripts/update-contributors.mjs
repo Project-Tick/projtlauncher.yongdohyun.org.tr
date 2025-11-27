@@ -23,7 +23,7 @@ if (GITHUB_TOKEN) headers["Authorization"] = `Bearer ${GITHUB_TOKEN}`;
 async function fetchTeam(slug) {
   // https://developer.github.com/v3/repos/#get
   let response = await axios.get(
-    `https://api.github.com/orgs/Project-Tick/teams/${slug}/members`,
+    `https://api.github.com/orgs/PT-Team/teams/${slug}/members`,
     { headers }
   );
 
