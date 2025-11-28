@@ -26,5 +26,38 @@
   </head>
   <body>
     {{ content | safe }}
+    <script>
+      (() => {
+        const storageKey = "theme-preference";
+        const root = document.documentElement;
+        const mql = window.matchMedia("(prefers-color-scheme: dark)");
+
+        const resolveTheme = () => localStorage.getItem(storageKey) || (mql.matches ? "dark" : "light");
+
+        const applyTheme = (theme) => {
+          root.dataset.theme = theme;
+          const toggle = document.querySelector("[data-theme-toggle]");
+          if (toggle) {
+            toggle.setAttribute("data-theme-state", theme);
+          }
+        };
+
+        applyTheme(resolveTheme());
+
+        document.addEventListener("click", (event) => {
+          const btn = event.target.closest("[data-theme-toggle]");
+          if (!btn) return;
+          const nextTheme = (root.dataset.theme === "dark") ? "light" : "dark";
+          localStorage.setItem(storageKey, nextTheme);
+          applyTheme(nextTheme);
+        });
+
+        mql.addEventListener("change", () => {
+          if (!localStorage.getItem(storageKey)) {
+            applyTheme(resolveTheme());
+          }
+        });
+      })();
+    </script>
   </body>
 </html>

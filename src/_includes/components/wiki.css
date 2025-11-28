@@ -54,12 +54,13 @@
 }
 
 .wiki-toc .section, .toggle>details>summary {
-  border-radius: 1em 0 0 1em;
+  border-radius: 0.75em 0 0 0.75em;
   display: flex;
+  font-size: .95em;
 }
 
 .wiki-toc .section>a, .toggle>details>summary>a {
-  padding: 0.6em;
+  padding: 0.3em 0.5em;
   flex-grow: 1;
 }
 
