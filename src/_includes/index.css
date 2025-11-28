@@ -198,6 +198,27 @@ main.container {
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
 }
 
+/* Darken article/content blocks (About page, posts) so changes are visible */
+.tmpl-post .content,
+main.tmpl-post .content {
+  /* Match infobox.top styling for exact same dark look */
+  background: linear-gradient(180deg, rgba(8, 12, 20, 0.98), rgba(3, 6, 10, 0.96));
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.6);
+  color: var(--primary-text);
+}
+
+.tmpl-post .content h1,
+.tmpl-post .content h2,
+.tmpl-post .content p,
+.tmpl-post .content li {
+  color: var(--primary-text);
+}
+
+.tmpl-post .content a {
+  color: var(--link);
+}
+
 .content.compact {
   width: min(50%, 42em);
   margin-left: auto;
@@ -218,6 +239,49 @@ main.container {
   border: 1px solid rgba(255, 255, 255, 0.05);
   position: relative;
   overflow: hidden;
+}
+
+.about-section {
+  /* Stronger dark surface for about blocks to make change obvious */
+  background: #03050a;
+  background-image: linear-gradient(180deg, rgba(10,14,20,0.98), rgba(3,5,10,0.98));
+  border-radius: 1.25em;
+  padding: 2em;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 48px 100px rgba(0, 0, 0, 0.82), inset 0 1px 0 rgba(255, 255, 255, 0.02);
+  color: var(--primary-text);
+}
+
+.about-section:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
+.about-section h1,
+.about-section h2 {
+  margin-top: 0;
+}
+
+.about-section ul {
+  padding-left: 1.2em;
+  color: var(--primary-text-muted);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1.5em;
+}
+
+.about-section.about-grid {
+  padding: 2em;
+}
+
+.about-grid > div {
+  padding: 1.25em;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: linear-gradient(180deg, rgba(6, 10, 16, 0.95), rgba(2,6,10,0.6));
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.7);
+  border-radius: 0.85em;
 }
 
 .section::before {
@@ -259,6 +323,35 @@ main.container {
   padding: 1.5em;
   border-radius: 1.25em;
   border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Darken maintainers/moderators infobox for visibility */
+.infobox.top,
+.infobox.top + .infobox {
+  background: linear-gradient(180deg, rgba(8, 12, 20, 0.98), rgba(3,6,10,0.96));
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 28px 60px rgba(0,0,0,0.6);
+  color: var(--primary-text);
+}
+
+.infobox.top h1,
+.infobox.top h2,
+.infobox.top p,
+.infobox.top li {
+  color: var(--primary-text);
+}
+
+.infobox.top .user-list {
+  gap: 0.75em;
+}
+
+.infobox.top .user-info {
+  background-color: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+.infobox.top .user-info .user-name {
+  color: var(--primary-text);
 }
 
 .button {
