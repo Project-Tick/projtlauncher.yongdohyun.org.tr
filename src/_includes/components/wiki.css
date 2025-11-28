@@ -4,6 +4,11 @@
 
 .wiki-content.wiki-content {
   border-radius: 1em 1em 0 0;
+  background: linear-gradient(150deg, rgba(6, 10, 18, 0.95), rgba(12, 18, 30, 0.92));
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.45);
+  padding: 1.5em;
+  backdrop-filter: blur(6px);
 }
 
 .wiki-content {
@@ -12,9 +17,11 @@
 
 .wiki-toc {
   padding: 1em 0 1em 1em;
-  background-color: var(--accent);
+  background: linear-gradient(160deg, rgba(4, 8, 15, 0.92), rgba(8, 14, 26, 0.85));
   border-radius: 0 0 1em 1em;
   font-size: 1em;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04), 0 25px 40px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   /* Reset */
   flex: 1;
 }
@@ -57,6 +64,7 @@
   border-radius: 0.75em 0 0 0.75em;
   display: flex;
   font-size: .95em;
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .wiki-toc .section>a, .toggle>details>summary>a {
@@ -74,7 +82,7 @@ summary {
 }
 
 .toggle:not(.wiki-toc-active) > details[open] > summary {
-  background-color: var(--accent-light);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 /* Menus nested 2 or more deep */
@@ -104,7 +112,7 @@ summary {
 }
 
 .section:hover, .toggle summary:hover {
-  background-color: var(--accent-light);
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
 /* Show only active nested lists */
@@ -150,7 +158,12 @@ summary {
 
 @media (min-width: 64em) {
   .wiki-content {
-    width: 80%
+    width: 80%;
+    border-radius: 0 1em 1em 0;
+    background: linear-gradient(150deg, rgba(6, 10, 18, 0.95), rgba(12, 18, 30, 0.92));
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(6px);
   }
   .wiki-content.wiki-content {
     border-radius: 0 1em 1em 0;

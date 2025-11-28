@@ -81,41 +81,6 @@ header.site-hero {
   flex-wrap: wrap;
 }
 
-.theme-toggle {
-  width: 2.75em;
-  height: 2.75em;
-  border-radius: 999px;
-  border: 1px solid var(--chip-border);
-  background: var(--chip-bg);
-  color: var(--primary-text);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  position: relative;
-  transition: background 160ms ease, border-color 160ms ease;
-}
-
-.theme-toggle:hover {
-  background: var(--chip-bg-hover, var(--chip-bg));
-  border-color: var(--chip-border-hover, var(--chip-border));
-}
-
-.theme-toggle-icon {
-  position: absolute;
-  font-size: 1.25em;
-  opacity: 0;
-  transition: opacity 150ms ease;
-}
-
-.theme-toggle[data-theme-state="dark"] .theme-toggle-icon-dark {
-  opacity: 1;
-}
-
-.theme-toggle[data-theme-state="light"] .theme-toggle-icon-light {
-  opacity: 1;
-}
-
 .social-links {
   display: flex;
   align-items: center;
