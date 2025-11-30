@@ -6,8 +6,8 @@ hero:
   description: 'An open source Minecraft launcher with the ability to manage multiple instances, accounts and
   mods. Focused on user freedom and free redistributability.'
   image:
-    light: '/img/screenshots/projtlauncher_main_window.png'
-    dark: '/img/screenshots/projtlauncher_main_window.png'
+    light: '/img/screenshots/projtlauncher_windows_dark_main_window.png'
+    dark: '/img/screenshots/projtlauncher_windows_dark_main_window.png'
   button:
     url: /download?from=button
     content: 'Download Now'
@@ -54,7 +54,7 @@ hero:
           <li>Version pinning and downgrade support</li>
           <li>Log console with real-time progress</li>
         </ul>
-        <img src="/img/screenshots/projtlauncher_install_modpacks_modrinth.png" alt="ProjT Launcher installing a Modrinth pack">
+        <img src="/img/screenshots/projtlauncher_windows_dark_install_modpacks_modrinth.png" alt="ProjT Launcher installing a Modrinth pack">
       </article>
       <article class="spotlight-card">
         <h3>Granular control over every mod</h3>
@@ -64,7 +64,7 @@ hero:
           <li>Per-instance overrides keep experiments contained</li>
           <li>Update previews show what will change before you apply</li>
         </ul>
-        <img src="/img/screenshots/projtlauncher_install_mods.png" alt="Managing mods directly in ProjT Launcher">
+        <img src="/img/screenshots/projtlauncher_windows_dark_install_mods.png" alt="Managing mods directly in ProjT Launcher">
       </article>
     </div>
   </section>

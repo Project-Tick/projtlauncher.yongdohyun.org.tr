@@ -11,44 +11,44 @@ ProjT Launcher has various settings to customize your experience.
 
 ## Accounts
 
-![Accounts Settings](/img/screenshots/projtlauncher_settings_accounts.png)
+![Accounts Settings](/img/screenshots/projtlauncher_windows_dark_settings_accounts.png)
 
 ## Appearance
 
-![Appearance Settings](/img/screenshots/projtlauncher_settings_appearance.png)
+![Appearance Settings](/img/screenshots/projtlauncher_windows_dark_settings_appearance.png)
 
 ## General
 
 ### Backups Opened
 
-![General Settings Backups Opened](/img/screenshots/projtlauncher_settings_general_backups_closed.png)
+![General Settings Backups Opened](/img/screenshots/projtlauncher_windows_dark_settings_general_backups_closed.png)
 
 ### Backups Closed
 
-![General Settings Backups Closed](/img/screenshots/projtlauncher_settings_general_backups_opened.png)
+![General Settings Backups Closed](/img/screenshots/projtlauncher_windows_dark_settings_general_backups_opened.png)
 
 ## Java
 
-![Java Settings](/img/screenshots/projtlauncher_settings_java.png)
+![Java Settings](/img/screenshots/projtlauncher_windows_dark_settings_java.png)
 
 ## Language
 
-![Language Settings](/img/screenshots/projtlauncher_settings_language.png)
+![Language Settings](/img/screenshots/projtlauncher_windows_dark_settings_language.png)
 
 ## Tools
 
-![Tools Settings](/img/screenshots/projtlauncher_settings_tools.png)
+![Tools Settings](/img/screenshots/projtlauncher_windows_dark_settings_tools.png)
 
 ## Console
 
 ### Backups
 
-![Console Windows Backups](/img/screenshots/projtlauncher_console_windows_backups.png)
+![Console Windows Backups](/img/screenshots/projtlauncher_windows_dark_console_windows_backups.png)
 
 ### Minecraft Log
 
-![Console Windows Minecraft Log](/img/screenshots/projtlauncher_console_windows_mclog.png)
+![Console Windows Minecraft Log](/img/screenshots/projtlauncher_windows_dark_console_windows_mclog.png)
 
 ### Version
 
-![Console Window Version](/img/screenshots/projtlauncher_console_window_version.png)
+![Console Window Version](/img/screenshots/projtlauncher_windows_dark_console_window_version.png)
